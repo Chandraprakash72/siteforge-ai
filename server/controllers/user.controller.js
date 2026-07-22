@@ -1,0 +1,18 @@
+ import {generateResponce} from "../config/openRouter.js"
+import extractJson from "../utills/extractJson.js";
+export const getCurrentUser = async (req, res) => {
+  try {
+    if (!req.user) {
+      return res.json({ user: null });
+    }
+
+    return res.json({
+      user: req.user,
+    });
+  } catch (error) {
+    return res.status(500).json({
+      message: `Get current user error: ${error.message}`,
+    });
+  }
+}
+
