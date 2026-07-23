@@ -11,7 +11,7 @@ import useGetCurrentUser from "./hooks/useGetCurrentUser";
 import LiveSite from "./pages/LiveSite";
 import Pricing from "./pages/Pricing";
 
-export const serverUrl = "https://siteforge-ai-ey0t.onrender.com";
+export const serverUrl = import.meta.env.VITE_SERVER_URL;
 
 function App() {
   useGetCurrentUser();
