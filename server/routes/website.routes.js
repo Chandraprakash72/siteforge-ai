@@ -42,7 +42,6 @@ websiteRouter.get(
 );
 websiteRouter.get(
     "/get-by-slug/:slug",
-    isAuth,
     getBySlug
 );
 
