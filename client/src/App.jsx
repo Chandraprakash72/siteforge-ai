@@ -10,7 +10,7 @@ import WebsiteEditor from "./pages/Editor";
 import useGetCurrentUser from "./hooks/useGetCurrentUser";
 import LiveSite from "./pages/LiveSite";
 import Pricing from "./pages/Pricing";
-import { serverUrl } from "../App";
+
 
 export const serverUrl = import.meta.env.VITE_SERVER_URL;
 
