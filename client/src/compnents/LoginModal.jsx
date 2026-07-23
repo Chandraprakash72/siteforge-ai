@@ -6,7 +6,7 @@ import { auth, provider } from "../firebase";
 import axios from "axios"
 import { useDispatch } from "react-redux";
 import { setUserData } from "../redux/userSlice";
-const serverUrl = "http://localhost:8000"; 
+import { serverUrl } from "../App";
 
 
 function LoginModal({ open, onClose }) {
