@@ -417,7 +417,7 @@ export const getBySlug = async (req, res) => {
 
         const website = await Website.findOne({
             slug: req.params.slug,
-            user: req.user._id
+          
         })
 
         console.log("WEBSITE:", website)
